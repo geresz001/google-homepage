@@ -1,29 +1,70 @@
 <!DOCTYPE html>
 <html>
     <style>
-        
         .black-text {
             color: black;
-            text-decoration: none;        
+            text-decoration: none; 
+            padding: 10px
         }
         a:hover {
             color: black;
             text-decoration: underline;
         }
-    </style>
+        .right {
+            float: right;
+        }
+        .left {
+            float: left;
+        }
+        .center {
+            text-align: center;
 
-    <body>
-        
-
-        <p>
-            <a class="black-text" href="https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header">About</a>
-            <a class="black-text" href="https://store.google.com/GB/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB">Store</a>
-            <a class="black-text" href="https://mail.google.com/mail/u/0/">Gmail</a>
-            <a class="black-text" href="https://www.google.co.uk/imghp?hl=en&ogbl">Images</a>
-        </p> 
-           
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></a>
             
+        }
+        .mid-image {
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 175px;
+        }
+        .input{
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+       
+       
+
+
+    </style>
+    <head>
+        <h5>
+            <div>
+            <a class="black-text left" href="https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header">About</a>
+            <a class="black-text left" href="https://store.google.com/GB/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB">Store</a>
+            
+            <img class="right" src="https://lh5.googleusercontent.com/FnhsbLzvZuHbMsqpQTjVErIdzFcmRMNPPU2nzJ9FmZA6OW8lnD0cBQTet1EiSi7mKt4TCh9BezgypgI3dspRulyHAGXDlpXcDFxvaW1DtIq1CyAzrqCOrQ5I7qFt4RfeBsvJXj9u"width="1.5%" height="1.5%" alt="Google Apps">
+            <a class="black-text right" href="https://www.google.co.uk/imghp?hl=en&ogbl">Images</a>
+            <a class="black-text right" href="https://mail.google.com/mail/u/0/">Gmail</a>
+            </div>    
+        </h5> 
+    </head>
+    <body>
+        <img class="mid-image" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
         
-    </body>
+    
+        
+
+
+        <form action="/action_page.php">
+            <label for="gsearch"></label>
+            <input class="input" type="search" id="gsearch" name="gsearch">
+        </form>
+        <div class="center">
+            <label for buttons>
+                <button type="button">Google Search</button> 
+                <button type="button">I'm Feeling Lucky</button>
+            </label>
+        </div>
+    </body>    
 </html>
