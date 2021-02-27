@@ -11,17 +11,23 @@
             color: black;
             text-decoration: underline;
         }
-        .right {
+        .right-top {
             float: right;
         }
-        .left {
+        .right-bottom{
+            float: right
+        }
+        .left-top {
             float: left;
         }
+        .left-bottom {
+            float: left;
+            position: absolute; 
+            bottom: 0;
+       }
         .center {
             text-align: center;
             margin: 10px;
-
-            
         }
         .mid-image {
             display:block;
@@ -33,7 +39,6 @@
             display:block;
             margin-left: auto;
             margin-right: auto;
-            
         }
         .button {
             padding: 10px 20px;
@@ -47,37 +52,40 @@
             border-style: solid;
             border-radius: 6px;
         }
+        .bottom-border {
+            border-style: solid;
+            border-width:  
+        }
 
 
     </style>
     <head>
         <h5>
             <div>
-            <a class="black-text left" href="https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header">About</a>
-            <a class="black-text left" href="https://store.google.com/GB/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB">Store</a>
+                <a class="black-text left-top" href="https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header">About</a>
+                <a class="black-text left-top" href="https://store.google.com/GB/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB">Store</a>
             
-            <img class="right" src="https://lh5.googleusercontent.com/FnhsbLzvZuHbMsqpQTjVErIdzFcmRMNPPU2nzJ9FmZA6OW8lnD0cBQTet1EiSi7mKt4TCh9BezgypgI3dspRulyHAGXDlpXcDFxvaW1DtIq1CyAzrqCOrQ5I7qFt4RfeBsvJXj9u"width="1.5%" height="1.5%" alt="Google Apps">
-            <a class="black-text right" href="https://www.google.co.uk/imghp?hl=en&ogbl">Images</a>
-            <a class="black-text right" href="https://mail.google.com/mail/u/0/">Gmail</a>
-            </div>    
+                <img class="right-top" src="https://lh5.googleusercontent.com/FnhsbLzvZuHbMsqpQTjVErIdzFcmRMNPPU2nzJ9FmZA6OW8lnD0cBQTet1EiSi7mKt4TCh9BezgypgI3dspRulyHAGXDlpXcDFxvaW1DtIq1CyAzrqCOrQ5I7qFt4RfeBsvJXj9u"width="1.5%" height="1.5%" alt="Google Apps">
+                <a class="black-text right-top" href="https://www.google.co.uk/imghp?hl=en&ogbl">Images</a>
+                <a class="black-text right-top" href="https://mail.google.com/mail/u/0/">Gmail</a>
+            </div>
+            <div>
+                <a class="black-text left-bottom bottom-border" href="https://ads.google.com/intl/en_uk/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+            </div>
         </h5> 
     </head>
     <body>
         <img class="mid-image" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
         
     
-        
-
-
-        <form action="/action_page.php">
-            <label for="gsearch"></label>
-            <input size="70" class="input" type="search" id="gsearch" name="gsearch">
-        </form>
+        <div>  
+            <form> 
+                <input class="input" size="70" name="search">
+            </form>
+        </div>
         <div class="center">
-            <label for buttons>
-                <button class="button" type="button">Google Search</button> 
-                <button class="button" type="button">I'm Feeling Lucky</button>
-            </label>
+             <button class="button" type="button">Google Search</button> 
+            <button class="button" type="button">I'm Feeling Lucky</button>
         </div>
     </body>    
 </html>
